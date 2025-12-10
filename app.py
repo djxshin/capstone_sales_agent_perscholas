@@ -30,7 +30,7 @@ def generate_sales_insights(product_name, company_url, product_category, competi
     Sends a structured prompt to Gemini to generate the one-pager content.
     """
     # --- CHANGE 1: Use the newer, correct model name ---
-    model = genai.GenerativeModel('models/gemini-2.0-flash')
+    model = genai.GenerativeModel('models/gemini-flash-latest')
 
     prompt = f"""
     You are an expert Sales Assistant Agent. Your goal is to help a sales rep sell "{product_name}" to the company at "{company_url}".
